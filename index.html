@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hidden Corner</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1a1a1a, #333);
-            color: #ffffff;
-            padding: 20px;
-        }
-        h1 {
-            color: #00ff99;
-            text-align: left;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 10px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .link-box {
-            background: linear-gradient(135deg, rgba(0,255,153,0.8), rgba(0,128,255,0.8));
-            padding: 10px 15px;
-            border-radius: 5px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-            transition: 0.3s;
-        }
-        .link-box:hover {
-            background: linear-gradient(135deg, rgba(0,128,255,0.8), rgba(0,255,153,0.8));
-        }
-        a {
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hidden Corner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #333);
+      color: #ffffff;
+      padding: 20px;
+    }
+    h1 {
+      color: #ffffff;
+      text-align: left;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .link-box {
+      background: linear-gradient(135deg, rgba(0,255,153,0.8), rgba(0,128,255,0.8));
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+      transition: 0.3s;
+      text-align: center;
+    }
+    .link-box:hover {
+      background: linear-gradient(135deg, rgba(0,128,255,0.8), rgba(0,255,153,0.8));
+    }
+    .link-box a {
+      text-decoration: none !important;
+      color: #ffffff !important;
+      font-weight: bold;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .link-box a:visited,
+    .link-box a:hover,
+    .link-box a:active {
+      color: #ffffff !important;
+      text-decoration: none !important;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hidden Corner</h1>
-    <div class="container">
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/2048">2048</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/1v1space">1v1space</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/DogeMiner">DogeMiner</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/HexGL">HexGL</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/among-us">Among Us</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/avalanche">Avalanche</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/backrooms">Backrooms</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/basketball-stars">Basketball Stars</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/bloxors">Bloxors</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/chrome-dino">Chrome Dino</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/doodle-jump">Doodle Jump</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/ducklife4">Ducklife 4</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/flappy-bird">Flappy Bird</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/geodash">Geo Dash</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/krunker">Krunker</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/minecraft">Minecraft</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/solitaire">Solitaire</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/slope">Slope</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/smashkarts">Smash Karts</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/stickwar">Stick War</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/subway-surfers">Subway Surfers</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/temple-run-2">Temple Run 2</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/theheist">The Heist</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/tunnel-rush">Tunnel Rush</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/vex4">Vex 4</a></div>
-        <div class="link-box"><a href="https://GMolter.github.io/sk3/projects/worlds-hardest-game-2">World's Hardest Game 2</a></div>
-    </div>
+  <h1>Hidden Corner</h1>
+  <div class="container">
+    <a href="https://GMolter.github.io/sk3/projects/2048" class="link-box">2048</a>
+    <a href="https://GMolter.github.io/sk3/projects/DogeMiner" class="link-box">DogeMiner</a>
+    <a href="https://GMolter.github.io/sk3/projects/HexGL" class="link-box">HexGL</a>
+    <a href="https://GMolter.github.io/sk3/projects/among-us" class="link-box">Among Us</a>
+    <a href="https://GMolter.github.io/sk3/projects/avalanche" class="link-box">Avalanche</a>
+    <a href="https://GMolter.github.io/sk3/projects/backrooms" class="link-box">Backrooms</a>
+    <a href="https://GMolter.github.io/sk3/projects/basketball-stars" class="link-box">Basketball Stars</a>
+    <a href="https://GMolter.github.io/sk3/projects/bloxors" class="link-box">Bloxors</a>
+    <a href="https://GMolter.github.io/sk3/projects/chrome-dino" class="link-box">Chrome Dino</a>
+    <a href="https://GMolter.github.io/sk3/projects/doodle-jump" class="link-box">Doodle Jump</a>
+    <a href="https://GMolter.github.io/sk3/projects/ducklife4" class="link-box">Ducklife 4</a>
+    <a href="https://GMolter.github.io/sk3/projects/flappy-bird" class="link-box">Flappy Bird</a>
+    <a href="https://GMolter.github.io/sk3/projects/geodash" class="link-box">Geo Dash</a>
+    <a href="https://GMolter.github.io/sk3/projects/minecraft" class="link-box">Minecraft</a>
+    <a href="https://GMolter.github.io/sk3/projects/solitaire" class="link-box">Solitaire</a>
+    <a href="https://GMolter.github.io/sk3/projects/slope" class="link-box">Slope</a>
+    <a href="https://GMolter.github.io/sk3/projects/stickwar" class="link-box">Stick War</a>
+    <a href="https://GMolter.github.io/sk3/projects/subway-surfers" class="link-box">Subway Surfers</a>
+    <a href="https://GMolter.github.io/sk3/projects/temple-run-2" class="link-box">Temple Run 2</a>
+    <a href="https://GMolter.github.io/sk3/projects/theheist" class="link-box">The Heist</a>
+    <a href="https://GMolter.github.io/sk3/projects/vex4" class="link-box">Vex 4</a>
+    <a href="https://GMolter.github.io/sk3/projects/worlds-hardest-game-2" class="link-box">World's Hardest Game 2</a>
+  </div>
 </body>
 </html>
